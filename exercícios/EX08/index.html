@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Nessa frase trmos um termo em <b>negrito</b> usando a Tag b (não semântica)</p>
+    <p>Nesta frase. tenho um <strong>Termo em destaque</strong> usando a Tag STRONG (semântica)</p>
+    <h2>Itálico/Ênfase</h2>
+    <p>frase utilizando <i>itálico</i> (sem semântica)</p>
+    <p>frase utilizando <em>ênfase</em> (com semântica)</p>
+    <h2>Texto marcado</h2>
+    <p>frase com <mark>texto marcado</mark>, usando a tag MARK</p>
+    <h2>Texto Pequeno:</h2>
+    <p>frase com <small>texto pequeno</small>, utilizando SMALL</p>
+    <h2>Texto deletado:</h2>
+    <p>Frase com <del>texto deletado</del>, utilizando DEL</p>
+    <h2>Texto inserido:</h2>
+    <p>Frase com <ins>texto inserido</ins>, utilizando INS</p>
+    <p>frase com texto <sup>sobrescrito</sup> e <sub>subscrito</sub></p>
+    <p>H<sub>2</sub>O e X<sup>2</sup></p>
+    <br>
+    <h2>Código:</h2>
+    <pre><code>
+        var a = window.document.querySelector('div#area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = "red"
+        }
+
+        function entrar() {
+            a.innerText = 'Clica aí pô'
+            a.style.background = "rgb(57, 184, 57)"
+        }
+
+        function sair() {
+            a.innerText = 'Clique Aqui!'
+            a.style.background = "green"
+        }
+    </code></pre>
+    <p>citação <q>no meio do texto</q> são feitas assim</p>
+    <blockquote cite="https://youtu.be/CA0IJjlbxtY?si=mFDihDcId5FVdEtK">
+        Esta é uma sitação separada Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat doloribus voluptatem fugiat fugit vero perspiciatis unde, dicta culpa voluptatum sequi distinctio totam dolor cum sed quia, provident adipisci, suscipit corporis.
+    </blockquote>
+    <p>Eu estou estudando <abbr title="hyper text markup link">HTML</abbr> para criar sites.</p>
+    <p>Esta frase tem um <mark style="background-color: lime;">texto marcado em verde</mark> no meio dela!!!</p>
+</body>
+</html>
